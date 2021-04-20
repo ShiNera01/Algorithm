@@ -1,0 +1,25 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<int> citations) {
+    int answer = 0;
+
+    
+	int max_index = 0;
+	for(int i = citations.size(); i > 0 ; i--){
+		int count = 0;
+		for(int j = 0; j<citations.size();j++){
+			if( i <= citations[j])count++;
+		}
+
+		
+		if(answer < count && count >= i) {
+			answer =  i;
+			break;
+		}
+	}
+    
+    return answer;
+}
