@@ -1,0 +1,8 @@
+pair <type1, type2> p
+
+p.first
+
+p.second
+
+make_pair(변수1, 변수2)
+
