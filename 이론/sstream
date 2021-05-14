@@ -1,0 +1,9 @@
+#include <sstream>
+
+
+stringstream ss(*it);
+string cmd, id, name;
+
+ss >>> cmd;
+
+ss >> id >> name; //공백 기준으로 세개 입력
