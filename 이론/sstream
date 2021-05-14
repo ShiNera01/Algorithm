@@ -1,9 +1,18 @@
 #include <sstream>
 
+record = {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"}
 
+
+
+for(vector <string> :: iterator iter = record.begin(); iter != record.end(); i++){
 stringstream ss(*it);
 string cmd, id, name;
 
-ss >>> cmd;
+ss >> cmd;
 
 ss >> id >> name; //공백 기준으로 세개 입력
+//1차 시기에 공백 기준으로 차례 대로 Enter uid1234 Muzi 순으로 cmd id name에 대입된다.
+
+
+
+}
