@@ -1,0 +1,31 @@
+str = "Hello World"
+print(str[::-1])    #문자가 뒤집힘
+ 
+len(str) #문자열의 길이
+
+str.isalpha()  #문자열이 영어로만 이루어져 있는지 체크
+str.isdigit()  #문자열이 숫자로만 이루어져있는지 확인
+str.isalnum()  #문자열이 한글,영어,숫자로만 구성되어 있는지, 빈칸같은 것들이 있으면 False 반환
+
+
+
+''.join(list)  #여러 개의 문자열을 join() 함수를 이용해 합칠 수 있다. 매개 변수로는 리스트가 사용된다.
+
+
+sorted(str)  #각 문자를 오름 차순으로 정렬
+sorted(str,reverse=Ture) #내림 차순
+
+str.split(' ')  #문자열을 괄호안의 문자를 기준으로 분리함.
+
+str = "I have one point one score."
+str.find('one') #one이 등장하는 첫번째 인덱스 반환
+str.find('one',10) #인덱스 10 이후의 'one'인덱스 반환
+
+str.upper() #대문자로 변환
+str.lower() #소문자로 변환
+
+str.strip()   #왼쪽, 오른쪽 공백 제거
+str.rstrip()  #오른쪽 공백 제거
+str.lstrip()  #왼쪽 공백 제거
+
+eval(exp)     #문자열로 이루어진 수식 
