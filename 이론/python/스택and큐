@@ -1,0 +1,13 @@
+스택은 기본 리스트 구조 사용하면 된다.
+
+list.append()
+list.pop()    
+
+
+큐는 덱 라이브러리 사용
+
+from collections import deque
+queue = deque()
+
+queue.append()     #리스트와 동일하게 마지막에 원소추가 상수시간 시간 복잡도
+queue.popleft()    #가장 왼쪽에 있는 원소 뽑아냄
