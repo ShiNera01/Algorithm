@@ -11,3 +11,40 @@ queue = deque()
 
 queue.append()     #리스트와 동일하게 마지막에 원소추가 상수시간 시간 복잡도
 queue.popleft()    #가장 왼쪽에 있는 원소 뽑아냄
+
+
+def dfs(graph, v, visited):
+  visited[v] = True
+  print(v, end =' ')
+  
+  for i in graph[v]:
+    if not visited[i]:
+      dfs(graph, i, visited)
+      
+      
+graph = [ [], [2,3,8], [1,7], [1,4,5], [3,5], [3,4], [7], [2,6,8], [1,7] ]
+visited = [False] * 9
+dfs(graph, 1, visited)
+
+
+
+from collections import deque
+
+def bfs(graph, start, visited):
+  queue = deque([start])
+  visited[start] = True
+  
+while queue:
+  v = queue.popleft()
+  print(v, end = ' ')
+  
+  for i in graph[v]:
+    if not visited[i]:
+      queue.append(i)
+      visited[i] = True
+
+
+
+
+
+
