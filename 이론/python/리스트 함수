@@ -1,0 +1,27 @@
+
+list.index(값)   # 값의 인덱스 반환
+
+list.reverse()  #리스트 역순으로 정렬
+
+sum(list) #리스트 내의 모든 원소의 합 계산
+
+number = range(5,10)
+
+number_list = list(number)  #5부터 9까지를 담은 리스트 생성
+
+all(list) #리스트 내의 모든 원소가 참인지 판별
+any(list) #리스트 내의 한 개 이상의 원소가 참인지 판별
+
+
+animal_list = ['강아지', '고양이', '사자', '호랑이']      #[(0, '강아지'), (1, '고양이'), (2, '사자'), (3, '호랑이')] 형태로 반환된다.
+answer = list(enumerate(animal_list))
+
+list.sort() #원소 정렬됨 사전순 오름차순
+
+list.count('값') #특정 원소의 수를 카운트
+
+del list[:] #슬라이싱 해서 제거
+del list[i] #i번재 있는 원소 제거
+list.insert(1,'원숭이') #인덱스 1에 원숭이 삽입
+
+list.append('기린')  #마지막에 기린 
