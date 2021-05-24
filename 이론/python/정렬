@@ -50,3 +50,11 @@
     삽입                N^2                       N
     퀵                 NlogN                      N
     계수                N+k                      N+k
+    
+    
+    
+    
+   여러 키 값으로 정렬
+   
+   sorted(자료형(list), key = lambda x : (x['age'], k['name'])) 
+   같은 age에 대해서 name으로 정렬
