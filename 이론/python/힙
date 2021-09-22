@@ -1,0 +1,7 @@
+heap1 = changeheap(heap2)
+
+heap1을 heap2구성요소로 변경 가능
+
+nlargest(n, heap) 함수는 n개의 가장 큰 값들로 이루어진 리스트를 반환
+
+h.index(heapq.nlargest(1, h)[0])
