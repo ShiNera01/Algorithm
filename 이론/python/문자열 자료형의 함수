@@ -13,7 +13,7 @@ str.isalnum()  #문자열이 한글,영어,숫자로만 구성되어 있는지, 
 
 
 sorted(str)  #각 문자를 오름 차순으로 정렬
-sorted(str,reverse=Ture) #내림 차순
+sorted(str,reverse=True) #내림 차순
 
 str.split(' ')  #문자열을 괄호안의 문자를 기준으로 분리함.
 
